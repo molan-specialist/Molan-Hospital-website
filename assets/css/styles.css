@@ -176,8 +176,7 @@ a {
   }
 
   .nav.openNav .nav-links {
-    left: auto;
-    right: 0px;
+    left: 0;
   }
 
   .nav .navOpenBtn {
@@ -527,16 +526,15 @@ h1 span.stop-blinking::before {
 
 .doctors__card h4 {
   margin-top: 1rem;
-  margin-bottom: 1rem;
   font-size: 1.2rem;
   font-weight: 600;
   color: var(--text-dark);
 }
 
-/* .doctors__card p {
+.doctors__card p {
   margin-bottom: 1rem;
   color: var(--text-light);
-} */
+}
 
 .footer {
   background-color: var(--primary-color-light);

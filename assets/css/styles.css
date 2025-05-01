@@ -265,7 +265,7 @@ header {
 }
 
 h1 span {
-  color: #fff;
+  color: var(--text-dark);
   position: relative;
 }
 
@@ -276,7 +276,7 @@ h1 span::before {
   position: absolute;
   top: 50%;
   right: -8px;
-  background: #fff;
+  background: var(--text-dark);
   transform: translateY(-45%);
   animation: blink 0.7s infinite;
 }
@@ -717,6 +717,10 @@ h1 span.stop-blinking::before {
 
   .doctors__grid {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .doctors__nav {
+    justify-content: center;
   }
 
   .footer__bar__content {

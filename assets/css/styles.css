@@ -63,7 +63,7 @@ a {
 }
 
 .nav.scrolled {
-  background-color: hsla(0, 0%, 100%, 1); 
+  background-color: hsla(0, 0%, 100%, 1);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -72,29 +72,32 @@ a {
   display: flex;
   align-items: center;
 }
+
 .nav {
   justify-content: space-between;
 }
 
 
-.logo{
+.logo {
   width: 5%;
 }
+
 .nav .nav-links {
   column-gap: 20px;
   list-style: none;
 }
+
 .nav .nav-links a {
   transition: all 0.2s linear;
-  color: #000;  
+  color: #000;
   text-decoration: none;
 }
 
-.nav .nav-links a:hover{
+.nav .nav-links a:hover {
   color: var(--primary-color);
 }
 
-.nav .nav-links .active{
+.nav .nav-links .active {
   color: var(--primary-color);
 }
 
@@ -103,20 +106,20 @@ a {
   display: none;
 }
 
-.contact1{
+.contact1 {
   display: none;
 }
 
-.contact2{
+.contact2 {
   list-style: none;
   padding: 10px 15px;
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
   border-radius: 25px;
   color: #fff;
 }
 
-.contact2:hover{
-  background-color: #BF1E2E;
+.contact2:hover {
+  background-color: var(--secondary-color);
 }
 
 /* responsive */
@@ -124,30 +127,35 @@ a {
   .nav {
     margin: 0 100px;
   }
-  
+
 }
 
 @media screen and (max-width: 600px) {
   .nav {
-    margin: 0 10px;
+    margin: 0 15px;
+  }
+
+  .logo img{
+    width: 150%;
   }
 }
 
 @media screen and (max-width: 768px) {
+
   .nav .navOpenBtn,
   .nav .navCloseBtn {
     display: block;
   }
 
-  .logo{
+  .logo {
     width: 10%;
   }
 
-  .contact2{
+  .contact2 {
     display: none;
   }
 
-  .contact1{
+  .contact1 {
     display: block;
   }
 
@@ -166,14 +174,18 @@ a {
     transition: all 0.4s ease;
     z-index: 100;
   }
+
   .nav.openNav .nav-links {
-    left: 0;
+    left: auto;
+    right: 0px;
   }
+
   .nav .navOpenBtn {
     color: #000;
     font-size: 20px;
     cursor: pointer;
   }
+
   .nav .navCloseBtn {
     position: absolute;
     top: 20px;
@@ -184,17 +196,6 @@ a {
   }
 }
 
-header {
-  background-image: linear-gradient(
-      to right,
-      rgba(255, 116, 130, 0.8),
-      rgba(87, 89, 92, 0.8)
-    ),
-    url("../images/header.jpg");
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
 
 .nav__container {
   padding: 2rem 1rem;
@@ -228,6 +229,27 @@ header {
   color: var(--white);
 }
 
+video {
+  object-fit: cover;
+  top: 0;
+  left: auto;
+  right: 0px;
+  width: 100%;
+  height: 100vh;
+}
+
+header {
+  /* background-image: linear-gradient(
+      to right,
+      rgba(255, 116, 130, 0.8),
+      rgba(87, 89, 92, 0.8)
+    ),
+    url("../images/heade"); */
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .header__container {
   display: flex;
   align-items: center;
@@ -237,9 +259,9 @@ header {
 .header__container h1 {
   margin-bottom: 1rem;
   max-width: 800px;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   line-height: 4rem;
-  color: var(--white);
+  color: var(--text-dark);
 }
 
 h1 span {
@@ -262,14 +284,17 @@ h1 span::before {
 h1 span.stop-blinking::before {
   animation: none;
 }
+
 @keyframes blink {
-  50% { opacity: 0 }
+  50% {
+    opacity: 0
+  }
 }
 
 .header__container p {
   margin-bottom: 2rem;
-  max-width: 600px;
-  color: var(--primary-color-light);
+  /* max-width: 600px; */
+  color: var(--text-dark);
 }
 
 .header__form {
@@ -327,15 +352,15 @@ h1 span.stop-blinking::before {
   color: var(--primary-color);
 }
 
-.service__header {
+/* .service__header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
-}
+} */
 
 .service__header__content p {
-  max-width: 600px;
+  /* max-width: 600px; */
   color: var(--text-light);
 }
 
@@ -448,15 +473,15 @@ h1 span.stop-blinking::before {
   color: var(--text-light);
 }
 
-.doctors__header {
+/* .doctors__header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
-}
+} */
 
 .doctors__header__content p {
-  max-width: 600px;
+  /* max-width: 600px; */
   color: var(--text-light);
 }
 
@@ -464,6 +489,8 @@ h1 span.stop-blinking::before {
   display: flex;
   align-items: center;
   gap: 1rem;
+  justify-content: end;
+  margin-top: 20px;
 }
 
 .doctors__nav span {
@@ -500,15 +527,16 @@ h1 span.stop-blinking::before {
 
 .doctors__card h4 {
   margin-top: 1rem;
+  margin-bottom: 1rem;
   font-size: 1.2rem;
   font-weight: 600;
   color: var(--text-dark);
 }
 
-.doctors__card p {
+/* .doctors__card p {
   margin-bottom: 1rem;
   color: var(--text-light);
-}
+} */
 
 .footer {
   background-color: var(--primary-color-light);
@@ -520,14 +548,26 @@ h1 span.stop-blinking::before {
   gap: 2rem;
 }
 
-.footer__col h3 {
+.footer__logo {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
   margin-bottom: 1rem;
+}
+
+.footer__logo img {
+  width: 15%;
+}
+
+.footer__logo h3 {
   font-size: 1.5rem;
   font-weight: 600;
   color: var(--primary-color);
+  align-items: center;
 }
 
-.footer__col h3 span {
+.footer__logo h3 span {
   color: var(--secondary-color);
 }
 
@@ -538,7 +578,7 @@ h1 span.stop-blinking::before {
   color: var(--primary-color);
 }
 
-.footer__col p a{
+.footer__col p a {
   color: var(--text-dark);
   cursor: pointer;
   transition: 0.3s;
@@ -575,6 +615,38 @@ h1 span.stop-blinking::before {
   color: var(--white);
 }
 
+.whatsapp_float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  z-index: 100;
+}
+
+.whatsapp-icon {
+  margin-top: 16px;
+}
+
+@media screen and (max-width: 767px) {
+  .whatsapp-icon {
+    margin-top: 18px;
+  }
+
+  .whatsapp_float {
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 10px;
+    font-size: 22px;
+  }
+}
+
 
 @media (width < 900px) {
   .service__grid {
@@ -599,6 +671,10 @@ h1 span.stop-blinking::before {
   .footer__container {
     grid-template-columns: repeat(1, 1fr);
   }
+
+  .footer__logo img {
+    width: 10%;
+  }
 }
 
 @media (width < 780px) {
@@ -609,6 +685,15 @@ h1 span.stop-blinking::before {
   .header__container {
     flex-direction: column;
   }
+
+  .header__container h1 {
+    text-align: center;
+  }
+
+  .header__container p {
+    text-align: center;
+  }
+
 }
 
 @media (width < 600px) {
@@ -637,5 +722,9 @@ h1 span.stop-blinking::before {
   .footer__bar__content {
     flex-direction: column;
     gap: 1rem;
+  }
+
+  .footer__logo img {
+    width: 15%;
   }
 }

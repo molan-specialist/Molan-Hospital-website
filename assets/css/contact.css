@@ -175,8 +175,7 @@ a {
     }
 
     .nav.openNav .nav-links {
-        left: auto;
-        right: 0px;
+        left: 0;
     }
 
     .nav .navOpenBtn {

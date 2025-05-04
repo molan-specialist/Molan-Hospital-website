@@ -1,81 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <!-- styles -->
-    <link rel="stylesheet" href="assets/css/contact.css" />
-    <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
-    rel="stylesheet"
-    />
 
-   <!-- icons -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
-   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- favicon -->
-    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
-    <title>MOLAN | Contact Us</title>
-  </head>
-    <body>
-        <header>
-            <div class="navbar">
-                <nav class="nav">
-                    <a href="index.html" class="logo"><img src="assets/images/Molan-logo.png" alt=""></a>
+  <!-- styles -->
+  <link rel="stylesheet" href="assets/css/contact.css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet" />
 
-                    <ul class="nav-links">
-                        <i class="uil uil-times navCloseBtn"></i>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="team.html">Our Team</a></li>
-                        <li><a href="#" class="contact1" style="color: #BF1E2E;">Contact Us</a></li>
-                    </ul>
+  <!-- icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
 
-                    <a href="#" class="contact2">Contact Us</a>
-                    <i class="uil uil-bars navOpenBtn"></i>
-                </nav>
-            </div>
-        </header>
-        
-        <div class="section-one">
-            <div class="contact-container">
-              <div class="form-conainer">
-                <form action="#" method="POST" class="contact-form">
-                  <div class="topic">Send us a message</div>
-                  <label for="first-name">First Name<span class="important-field">*</span></label>
-                  <input type="text" name="Firstname" id="first-name" placeholder="Enter your first name" required>
-        
-                  <label for="last-name">Last Name<span class="important-field">*</span></label>
-                  <input type="text" name="Lastname" id="last-name" placeholder="Enter your last name" required>
-        
-                  <label for="email">E-Mail<span class="important-field">*</span></label>
-                  <input type="email" name="Email" id="email" placeholder="Enter your E-mail" required>
-        
-                  <label for="phone">Phone Number<span class="important-field">*</span></label>
-                  <input type="tel" name="Phone" id="phone" placeholder="Enter your phone number" required>
-        
-                  <input type="hidden" name="country_code" id="country_code">
-        
-                  <label for="message">Message<span class="important-field">*</span></label>
-                  <textarea name="Message" id="message" rows="4" placeholder="Send a message"></textarea>
-        
-                  <button type="submit" class="send-button">Send Message</button>
-                </form>
-              </div>
-        
-              <div class="map-container">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3939.404653982016!2d7.394888775508608!3d9.117873687590421!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104ddf81a8f03193%3A0x81f247e7bd928f82!2s14%20Demola%20Onakomaya%20St%2C%20Gwarinpa%2C%20Kubwa%20900108%2C%20Federal%20Capital%20Territory!5e0!3m2!1sen!2sng!4v1745504025147!5m2!1sen!2sng"
-                  width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
-                </iframe>
-              </div>
-            </div>
-        </div>
-        
-        <a href="https://api.whatsapp.com/send?phone=2349013444406&text=My%20name%20is%20________%20&%20I%20need%20further%20information%20about%20your%20services."  target="_blank" class="whatsapp_float"><i class="fa-brands fa-whatsapp whatsapp-icon"></i></a>
-        <script src="assets/js/script.js"></script>
-    </body>
+  <!-- favicon -->
+  <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+  <title>MOLAN | Contact Us</title>
+</head>
+
+<body>
+  <header>
+    <div class="navbar">
+      <nav class="nav">
+        <a href="index.html" class="logo"><img src="assets/images/Molan-logo.png" alt=""></a>
+
+        <ul class="nav-links">
+          <i class="uil uil-times navCloseBtn"></i>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="team.html">Our Team</a></li>
+          <li><a href="#" class="contact1" style="color: #BF1E2E;">Contact Us</a></li>
+        </ul>
+
+        <a href="#" class="contact2">Contact Us</a>
+        <i class="uil uil-bars navOpenBtn"></i>
+      </nav>
+    </div>
+  </header>
+
+  <div class="section-one">
+    <div class="contact-container">
+      <div class="form-conainer">
+        <form action="https://formspree.io/f/xgvkaqdg" method="POST" class="contact-form">
+          <div class="topic">Send us a message</div>
+          <label for="first-name">First Name<span class="important-field">*</span></label>
+          <input type="text" name="Firstname" id="first-name" placeholder="Enter your first name" required>
+
+          <label for="last-name">Last Name<span class="important-field">*</span></label>
+          <input type="text" name="Lastname" id="last-name" placeholder="Enter your last name" required>
+
+          <label for="email">E-Mail<span class="important-field">*</span></label>
+          <input type="email" name="Email" id="email" placeholder="Enter your E-mail" required>
+
+          <label for="phone">Phone Number<span class="important-field">*</span></label>
+          <input type="tel" name="Phone" id="phone" placeholder="Enter your phone number" required>
+
+          <label for="message">Message<span class="important-field">*</span></label>
+          <textarea name="Message" id="message" rows="4" placeholder="Send a message"></textarea>
+
+          <button type="submit" class="send-button">Send Message</button>
+        </form>
+      </div>
+
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3939.404653982016!2d7.394888775508608!3d9.117873687590421!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104ddf81a8f03193%3A0x81f247e7bd928f82!2s14%20Demola%20Onakomaya%20St%2C%20Gwarinpa%2C%20Kubwa%20900108%2C%20Federal%20Capital%20Territory!5e0!3m2!1sen!2sng!4v1745504025147!5m2!1sen!2sng"
+          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+      </div>
+    </div>
+  </div>
+
+  <a href="https://api.whatsapp.com/send?phone=2349013444406&text=My%20name%20is%20________%20&%20I%20need%20further%20information%20about%20your%20services."
+    target="_blank" class="whatsapp_float"><i class="fa-brands fa-whatsapp whatsapp-icon"></i></a>
+  <script src="assets/js/script.js"></script>
+</body>
+
 </html>

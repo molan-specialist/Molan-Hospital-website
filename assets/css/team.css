@@ -17,12 +17,6 @@
   box-sizing: border-box;
 }
 
-.section__container {
-  max-width: var(--max-width);
-  margin: auto;
-  padding: 5rem 1rem;
-}
-
 img {
   width: 100%;
   display: flex;
@@ -48,7 +42,7 @@ body {
   top: 10px;
   left: 150px;
   right: 150px;
-  padding: 5px 20px;
+  padding: 10px 20px;
   transition: background-color 0.3s ease;
   z-index: 1000;
   border-radius: 10px;
@@ -119,91 +113,97 @@ a {
   background-color: var(--secondary-color);
 }
 
-/* responsive */
+
 @media screen and (max-width: 1024px) {
   .navbar {
-    margin: 0 40px;
+      margin: 0 40px;
   }
 
   .nav {
-    left: 40px;
-    right: 40px;
-    padding: 0px 10px;
+      left: 40px;
+      right: 40px;
+      padding: 10px 20px;
   }
 
   .nav .nav-links {
-    column-gap: 15px;
+      column-gap: 15px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .navbar {
-    margin: 0 20px;
+      margin: 0 20px;
   }
 
   .nav {
-    left: 20px;
-    right: 20px;
-    padding: 5px 15px;
-    flex-wrap: wrap;
-    justify-content: space-between;
+      left: 20px;
+      right: 20px;
+      padding: 5px 15px;
+      flex-wrap: wrap;
+      justify-content: space-between;
   }
 
   .nav .logo {
-    display: flex;
-    flex: 1 1 100%;
-    text-align: center;
-    justify-content: center;
+      display: flex;
+      flex: 1 1 100%;
+      text-align: center;
+      justify-content: center;
   }
 
   .nav .navOpenBtn,
   .nav .navCloseBtn {
-    display: block;
+      display: block;
   }
 
   .contact1 {
-    display: block;
+      display: block;
   }
 
   .contact2 {
-    display: none;
+      display: none;
   }
 
   .nav .nav-links {
-    position: fixed;
-    top: 0;
-    left: -100%;
-    height: 100%;
-    max-width: 280px;
-    width: 100%;
-    padding-top: 100px;
-    row-gap: 30px;
-    flex-direction: column;
-    background-color: var(--primary-color-light);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    transition: all 0.4s ease;
-    z-index: 100;
+      position: fixed;
+      top: 0;
+      left: -100%;
+      height: 100%;
+      max-width: 280px;
+      width: 100%;
+      padding-top: 100px;
+      row-gap: 30px;
+      flex-direction: column;
+      background-color: var(--primary-color-light);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      transition: all 0.4s ease;
+      z-index: 100;
   }
 
   .nav.openNav .nav-links {
-    left: 0;
+      left: 0;
   }
 
   .nav .navOpenBtn {
-    color: #000;
-    font-size: 20px;
-    cursor: pointer;
+      color: #000;
+      font-size: 20px;
+      cursor: pointer;
   }
 
   .nav .navCloseBtn {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    color: #000;
-    font-size: 20px;
-    cursor: pointer;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      color: #000;
+      font-size: 20px;
+      cursor: pointer;
   }
 
+}
+
+.section__container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 7rem 1rem 4rem 1rem;
 }
 
 .section__header {
@@ -213,6 +213,136 @@ a {
   color: var(--text-dark);
 }
 
+.doctors__header__content p {
+  /* max-width: 600px; */
+  color: var(--text-light);
+}
+
+.doctors__nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: end;
+  margin-top: 20px;
+}
+
+.doctors__nav span {
+  padding: 5px 15px;
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  background-color: var(--primary-color-light);
+  cursor: pointer;
+}
+
+.doctors__grid {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.doctors__card {
+  position: relative;
+  text-align: center;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.doctors__card__image {
+  position: relative;
+  overflow: hidden;
+}
+
+.doctors__card h4 {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.doctors__card p {
+  margin-bottom: 1rem;
+  color: var(--text-light);
+}
+
+.team-hover {
+  position: absolute; /* Position it relative to the parent */
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  padding: 10px 26px;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.4s ease;
+}
+
+.doctors__card:hover .team-hover {
+  opacity: 1; /* Show on hover */
+}
+
+.team-hover p {
+  font-size: 12px;
+  color: #fff;
+}
+
+
+.accordion{
+  /* max-width: 530px;
+  box-shadow:  0 0 4px rgba(0,0,0,0.2);
+  margin: 0 15px; */
+  width: 100%;
+  background: #FFF;
+  padding: 15px;
+  border-radius: 8px;
+}
+.accordion .accordion-content{
+  margin: 10px 0;
+  border-radius: 4px;
+  background: var(--primary-color-light);
+  border: 1px solid var(--secondary-color);
+  overflow: hidden;
+}
+
+.accordion-content.open{
+  padding-bottom: 10px;
+}
+.accordion-content header{
+  display: flex;
+  min-height: 50px;
+  padding: 0 15px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.2s linear;
+}
+.accordion-content.open header{
+  min-height: 35px;
+}
+.accordion-content header .title{
+  font-size: 18px;
+  color: var(--text-dark);
+}
+.accordion-content header i{
+  font-size: 15px;
+  color: var(--text-dark);
+}
+.accordion-content .description{
+  height: 0;
+  font-size: 15px;
+  color: var(--text-light);
+  font-weight: 400;
+  padding: 0 15px;
+  transition: all 0.2s linear;
+}
 
 .footer {
   background-color: var(--primary-color-light);
@@ -325,6 +455,11 @@ a {
 }
 
 @media (width < 900px) {
+  .doctors__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
   .footer__container {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -335,6 +470,19 @@ a {
 }
 
 @media (width < 600px) {
+  .doctors__header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .doctors__grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .doctors__nav {
+    justify-content: center;
+  }
+
   .footer__bar__content {
     flex-direction: column;
     gap: 1rem;

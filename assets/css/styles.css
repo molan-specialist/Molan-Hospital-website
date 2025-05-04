@@ -176,8 +176,7 @@ a {
   }
 
   .nav.openNav .nav-links {
-    left: auto;
-    right: 0px;
+    left: 0;
   }
 
   .nav .navOpenBtn {
@@ -265,7 +264,7 @@ header {
 }
 
 h1 span {
-  color: #fff;
+  color: var(--text-dark);
   position: relative;
 }
 
@@ -276,7 +275,7 @@ h1 span::before {
   position: absolute;
   top: 50%;
   right: -8px;
-  background: #fff;
+  background: var(--text-dark);
   transform: translateY(-45%);
   animation: blink 0.7s infinite;
 }
@@ -527,16 +526,15 @@ h1 span.stop-blinking::before {
 
 .doctors__card h4 {
   margin-top: 1rem;
-  margin-bottom: 1rem;
   font-size: 1.2rem;
   font-weight: 600;
   color: var(--text-dark);
 }
 
-/* .doctors__card p {
+.doctors__card p {
   margin-bottom: 1rem;
   color: var(--text-light);
-} */
+}
 
 .footer {
   background-color: var(--primary-color-light);
@@ -717,6 +715,10 @@ h1 span.stop-blinking::before {
 
   .doctors__grid {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .doctors__nav {
+    justify-content: center;
   }
 
   .footer__bar__content {
